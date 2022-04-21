@@ -1,3 +1,4 @@
+<?php
 // Update product quantities in cart if the user clicks the "Update" button on the shopping cart page
 if (isset($_POST['update']) && isset($_SESSION['cart'])) {
     // Loop through the post data so we can update the quantities for every product in cart
@@ -16,4 +17,5 @@ if (isset($_POST['update']) && isset($_SESSION['cart'])) {
     header('location: index.php?page=cart');
     exit;
 }
+
 
